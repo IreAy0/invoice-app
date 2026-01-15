@@ -5,7 +5,6 @@ let socket: Socket | null = null;
 
 export function getSocket() {
   if (!socket) {
-    // In production, replace with your backend URL
     socket = io("https://demo-socket.example.com", { autoConnect: false });
   }
   return socket;

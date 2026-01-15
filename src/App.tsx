@@ -22,14 +22,6 @@ export default function App() {
             </ProtectedRoute>
           }
         />
-        <Route
-          path="/invoice/:id"
-          element={
-            <ProtectedRoute>
-              <InvoiceDetails />
-            </ProtectedRoute>
-          }
-        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ErrorBoundary>
