@@ -78,7 +78,6 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
 
         {!loading && !error && data && (
           <>
-            {/* Floating close button, outside the card edge like the design */}
             <button
               onClick={onClose}
               className="absolute -top-5 -right-5 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white hover:bg-gray-100 transition-colors shadow-card focus-visible:focus-ring"
@@ -101,7 +100,6 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
               </svg>
             </button>
 
-            {/* Header Section */}
             <div className="border-b border-gray-200  pt-6 pb-4 sm:pt-8 sm:pb-6">
               <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-start">
                 <div className="flex-1 pr-12">
@@ -147,7 +145,6 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
               </div>
             </div>
 
-            {/* Reminders Section */}
             <div className="mt-6">
               <div className="box-border flex items-center gap-6 rounded-[24px] border border-[#E3E6EF] px-6 py-6">
                 <span className="flex items-center text-[12px] leading-4 font-normal tracking-[0.07em] uppercase text-[#666F77]">
@@ -183,14 +180,10 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
               </div>
             </div>
 
-            {/* Main Content Area */}
             <div className="flex flex-1 flex-col gap-6 py-6  lg:flex-row">
-              {/* Left Column - Invoice Details */}
               <div className="flex-1 p-4  space-y-6 border border-gray-200 rounded-[40px] ">
-                {/* Sender & Customer Section */}
                 <div className="rounded-[40px] bg-[#FCDDEC] p-8 shadow-card flex flex-col">
                   <div className="flex flex-col gap-8 md:flex-row  md:items-start">
-                    {/* Sender */}
                     <div className="w-full max-w-[298px] space-y-4">
                       <div className="text-[12px] leading-[15px] font-neue-medium font-medium uppercase tracking-[0.07em] text-text-body">
                         Sender
@@ -220,8 +213,6 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
                         </div>
                       </div>
                     </div>
-
-                    {/* Customer */}
                     <div className="w-full max-w-[298px] space-y-4 md:max-w-[152px]">
                       <div className="text-[12px] leading-[15px] font-neue-medium font-medium uppercase tracking-[0.07em] text-text-body">
                         Customer
@@ -243,7 +234,6 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
                     </div>
                   </div>
 
-                  {/* Invoice Details */}
                   <div className="mt-6 flex flex-col gap-2">
                     <div className="text-[12px] leading-[15px] font-neue-medium font-medium uppercase tracking-[0.07em] text-text-body">
                       Invoice details
@@ -296,7 +286,6 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
                   </div>
                 </div>
 
-                {/* Items + Totals Section */}
                 <div className=" bg-white p-6 ">
                   <div className="mb-4 flex items-center gap-8">
                     <h3 className="text-base font-medium text-[#1F1F23] font-neue-medium">
@@ -334,7 +323,6 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
                     </table>
                   </div>
 
-                  {/* Totals block stacked vertically with side‑by‑side label/amount rows */}
                   <div className="mt-6 flex justify-end">
                     <div className="w-full max-w-xs space-y-3">
                       <div className="flex items-center justify-between">
@@ -367,14 +355,11 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
                   </div>
                 </div>
 
-                {/* Payment Information and Note */}
                 <div className="grid grid-cols-1 gap-4 m">
-                  {/* Payment Information */}
                   <div className="box-border flex flex-col items-start gap-2 rounded-[24px] border border-[#E3E6EF] bg-white px-6 py-4">
                     <div className="text-[12px] leading-[15px] font-neue-medium font-medium uppercase tracking-[0.07em] text-[#697598]">
                       Payment Information
                     </div>
-                    {/* Details grid that wraps into a second row gracefully */}
                     <div className="mt-1 flex flex-wrap gap-x-4 gap-y-3">
                       <div className="flex w-[120px] flex-col gap-1">
                         <div className="text-[10px] leading-5 font-normal tracking-[0.08em] uppercase text-[#666F77]">
@@ -435,7 +420,6 @@ export function InvoiceDetailsModal({ open, id, onClose }: Props) {
                 </div>
               </div>
 
-              {/* Right Column - Invoice Activity */}
               <div className="w-full flex-shrink-0 lg:w-[450px] ">
                 <h3 className="text-base font-semibold text-[#1F1F23] font-neue-medium">
                   Invoice Activity

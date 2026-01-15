@@ -1,7 +1,8 @@
 import { http, HttpResponse, delay } from "msw";
 import { invoiceDetails, summaries } from "../data/sample";
+import type { InvoiceSummary } from "../types";
 
-let summariesStore = [...summaries];
+let summariesStore: InvoiceSummary[] = [...summaries];
 
 export const handlers = [
   http.get("/api/invoices", async () => {

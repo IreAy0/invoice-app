@@ -116,7 +116,6 @@ export function Topbar({ onMenuClick }: TopbarProps) {
                     />
                   </svg>
                 </span>
-                {/* <ChevronDown className="h-4 w-4 text-text-soft" /> */}
               </div>
             }
             items={[
@@ -129,8 +128,6 @@ export function Topbar({ onMenuClick }: TopbarProps) {
           />
         </div>
       </div>
-      {/* <Button variant="secondary" pill>See what’s new</Button>
-      <Button pill>Create</Button> */}
     </header>
   );
 }

@@ -28,7 +28,6 @@ export function ActivityItem({ a, isLast }: Props) {
 
   return (
     <div className="flex items-start gap-4 isolate">
-      {/* Left icon pill + timeline connector */}
       <div className="flex flex-col items-center">
         <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-[#7879F1] text-white">
           <svg
@@ -57,7 +56,6 @@ export function ActivityItem({ a, isLast }: Props) {
         )}
       </div>
 
-      {/* Info block */}
       <div className="flex-1 space-y-1">
         <div className="text-[18px] leading-[22px] font-neue-medium font-medium text-black">
           {a.title}
