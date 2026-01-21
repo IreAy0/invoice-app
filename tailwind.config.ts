@@ -79,9 +79,9 @@ export default {
         inset: "inset 0 1px 0 rgba(255,255,255,0.4)",
       },
     },
-  },
+  }, 
   plugins: [
-    function ({ addUtilities }) {
+    function ({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) {
       addUtilities({
         ".focus-ring": {
           outline: "2px solid transparent",

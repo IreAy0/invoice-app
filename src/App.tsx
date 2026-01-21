@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import InvoiceHome from "./pages/InvoiceHome";
-import InvoiceDetails from "./pages/InvoiceDetails";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";

@@ -8,20 +8,20 @@ export const api = axios.create({
   timeout: 10_000,
 });
 
-// Attach auth token if present
+
 api.interceptors.request.use(async (config) => {
   const user = auth.currentUser;
   const token = user ? await user.getIdToken() : null;
+
   if (token) {
-    config.headers = {
-      ...(config.headers ?? {}),
-      Authorization: `Bearer ${token}`,
-    };
+    config.headers = config.headers ?? {};
+    config.headers.Authorization = `Bearer ${token}`;
   }
+
   return config;
 });
 
-// Convert network errors to readable messages
+
 api.interceptors.response.use(
   (res) => res,
   (err) => {
