@@ -1,7 +1,6 @@
 import React from "react";
 import { useAuth } from "../../auth/AuthContext";
 import { Dropdown } from "../ui/Dropdown";
-import { ChevronDown } from "lucide-react";
 
 type TopbarProps = {
   onMenuClick?: () => void;
